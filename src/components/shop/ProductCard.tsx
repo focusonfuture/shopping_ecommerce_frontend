@@ -98,12 +98,12 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
               </span>
             )}
             {product.is_featured && (
-              <span className="bg-amber-500 text-white text-xs font-bold px-2 py-0.5 rounded-md">
+              <span className="bg-secondary-500 text-white text-xs font-bold px-2 py-0.5 rounded-md">
                 Featured
               </span>
             )}
             {!product.is_in_stock && (
-              <span className="bg-gray-800/90 text-white text-xs font-medium px-2 py-0.5 rounded-md">
+              <span className="bg-neutral-700 text-white text-xs font-medium px-2 py-0.5 rounded-md">
                 Out of Stock
               </span>
             )}
@@ -116,7 +116,7 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
               whileTap={{ scale: 0.95 }}
               onClick={handleWishlist}
               className={`w-8 h-8 rounded-full flex items-center justify-center shadow-md transition-colors ${
-                wishlisted ? 'bg-red-500 text-white' : 'bg-[var(--surface)] text-[var(--text-secondary)] hover:bg-red-50 hover:text-red-500'
+                wishlisted ? 'bg-red-500 text-white' : 'bg-[var(--surface)] text-[var(--text-secondary)] hover:bg-primary-50 hover:text-primary-600'
               }`}
             >
               <Heart className={`w-4 h-4 ${wishlisted ? 'fill-current' : ''}`} />

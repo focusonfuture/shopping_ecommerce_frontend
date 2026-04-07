@@ -22,11 +22,11 @@ export function HeroSection() {
     <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-[var(--bg)]">
       {/* Background pattern */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-indigo-50 to-purple-50 opacity-60 blur-3xl" />
-        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-amber-50 to-rose-50 opacity-60 blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-primary-50 to-secondary-50 opacity-40 blur-3xl" />
+        <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-primary-100 to-secondary-100 opacity-40 blur-3xl" />
         <div
-          className="absolute inset-0 opacity-[0.02]"
-          style={{ backgroundImage: 'radial-gradient(circle, #0a0a0f 1px, transparent 1px)', backgroundSize: '32px 32px' }}
+          className="absolute inset-0 opacity-[0.015]"
+          style={{ backgroundImage: 'radial-gradient(circle, #111827 1px, transparent 1px)', backgroundSize: '40px 40px' }}
         />
       </div>
 
