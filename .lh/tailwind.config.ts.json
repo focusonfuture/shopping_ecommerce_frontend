@@ -1,0 +1,18 @@
+{
+    "sourceFile": "tailwind.config.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1775550346633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1775550346633,
+            "name": "Commit-0",
+            "content": "import type { Config } from 'tailwindcss'\n\nconst config: Config = {\n  content: [\n    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',\n    './src/components/**/*.{js,ts,jsx,tsx,mdx}',\n    './src/app/**/*.{js,ts,jsx,tsx,mdx}',\n  ],\n  theme: {\n    extend: {\n      colors: {\n        primary: {\n          50: '#f0fdfa',\n          100: '#ccfbf1',\n          200: '#99f6e4',\n          300: '#5eead4',\n          400: '#2dd4bf',\n          500: '#14b8a6',\n          600: '#0d9488',\n          700: '#0f766e',\n          800: '#115e59',\n          900: '#134e4a',\n          950: '#042f2e',\n        },\n        secondary: {\n          50: '#fefce8',\n          100: '#fef9c3',\n          200: '#fef08a',\n          300: '#fde047',\n          400: '#facc15',\n          500: '#eab308',\n          600: '#ca8a04',\n          700: '#a16207',\n          800: '#854d0e',\n          900: '#713f12',\n          950: '#422006',\n        },\n        neutral: {\n          50: '#fafafa',\n          100: '#f5f5f5',\n          200: '#e5e5e5',\n          300: '#d4d4d4',\n          400: '#a3a3a3',\n          500: '#737373',\n          600: '#525252',\n          700: '#404040',\n          800: '#262626',\n          900: '#171717',\n          950: '#0a0a0a',\n        }\n      },\n      fontFamily: {\n        sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],\n        mono: ['var(--font-geist-mono)', 'monospace'],\n        display: ['var(--font-display)', 'serif'],\n      },\n      animation: {\n        'fade-in': 'fadeIn 0.5s ease-in-out',\n        'slide-up': 'slideUp 0.4s ease-out',\n        'slide-down': 'slideDown 0.4s ease-out',\n        'scale-in': 'scaleIn 0.3s ease-out',\n        'shimmer': 'shimmer 1.5s infinite',\n      },\n      keyframes: {\n        fadeIn: {\n          '0%': { opacity: '0' },\n          '100%': { opacity: '1' },\n        },\n        slideUp: {\n          '0%': { transform: 'translateY(20px)', opacity: '0' },\n          '100%': { transform: 'translateY(0)', opacity: '1' },\n        },\n        slideDown: {\n          '0%': { transform: 'translateY(-20px)', opacity: '0' },\n          '100%': { transform: 'translateY(0)', opacity: '1' },\n        },\n        scaleIn: {\n          '0%': { transform: 'scale(0.95)', opacity: '0' },\n          '100%': { transform: 'scale(1)', opacity: '1' },\n        },\n        shimmer: {\n          '0%': { backgroundPosition: '-200% 0' },\n          '100%': { backgroundPosition: '200% 0' },\n        },\n      },\n      backgroundImage: {\n        'shimmer-gradient': 'linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)',\n      },\n    },\n  },\n  plugins: [\n    require('@tailwindcss/typography'),\n  ],\n}\n\nexport default config\n"
+        }
+    ]
+}
